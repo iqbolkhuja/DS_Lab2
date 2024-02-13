@@ -1,10 +1,10 @@
-package calendar;
-
 import java.util.GregorianCalendar;
+
+import calendar.MeetingCalendar;
 
 public abstract class CalendarEvent {
 	
-	private String Description;
+	private String description;
 	private String location;
 	private GregorianCalendar startTime;
 	private GregorianCalendar endTime;
@@ -12,7 +12,7 @@ public abstract class CalendarEvent {
 	public CalendarEvent (String description, String location, GregorianCalendar startTime, GregorianCalendar endTime)
 	{
 		super();
-		this.Description = description;
+		this.description = description;
 		this.location = location;
 		this.startTime = startTime;
 		this.endTime = endTime;
@@ -23,14 +23,14 @@ public abstract class CalendarEvent {
 	 * @return the description
 	 */
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 
 	/**
 	 * @param description the description to set
 	 */
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
 
 	/**
