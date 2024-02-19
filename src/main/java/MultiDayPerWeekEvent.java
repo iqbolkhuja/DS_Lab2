@@ -8,8 +8,10 @@ public class MultiDayPerWeekEvent extends CalendarEvent {
 	private int[] days;
 	
 	public MultiDayPerWeekEvent(String description, String location, GregorianCalendar startTime,
-			GregorianCalendar endTime) {
+			GregorianCalendar endTime, GregorianCalendar repeatUntil, int[] days) {
 		super(description, location, startTime, endTime);
+		this.days = days;
+		this.repeatUntil = repeatUntil;
 		// TODO Auto-generated constructor stub
 	}
 

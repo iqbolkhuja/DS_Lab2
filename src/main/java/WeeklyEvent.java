@@ -20,8 +20,10 @@ public class WeeklyEvent extends CalendarEvent {
 		this.repeatUntil = repeatUntil;
 	}
 
-	public WeeklyEvent(String description, String location, GregorianCalendar startTime, GregorianCalendar endTime) {
+	public WeeklyEvent(String description, String location,
+			GregorianCalendar startTime, GregorianCalendar endTime, GregorianCalendar repeatUntil) {
 		super(description, location, startTime, endTime);
+		this.repeatUntil = repeatUntil;
 		// TODO Auto-generated constructor stub
 	}
 
